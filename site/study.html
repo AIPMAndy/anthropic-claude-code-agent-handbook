@@ -1,0 +1,82 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Anthropic Claude Code 和 Agent 实践发展史：公开研究、十团队、四部门、开源配置、保姆级练习。"><link rel="stylesheet" href="style.css"><link rel="icon" href="favicon.svg" type="image/svg+xml"><title>深度报告：Anthropic 2024–2026 Claude Code 与 Agent 实践｜Agent Atlas</title><style>
+.study-hero{padding:90px 0 44px;border-bottom:1px solid var(--line)}.study-hero h1{font:400 clamp(45px,5.7vw,75px)/1.17 Georgia,'Songti SC',serif;letter-spacing:-.055em;max-width:910px;margin:19px 0 24px}.study-hero h1 em{color:var(--accent);font-style:normal}.study-hero p{font-size:14px;color:var(--muted);max-width:660px}.study-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:72px;padding-top:54px;padding-bottom:105px}.study-aside{position:sticky;top:110px;align-self:start;font-size:12px;color:var(--muted);line-height:1.9}.study-aside strong{display:block;font-size:13px;color:var(--ink);margin-bottom:18px}.study-aside a{display:block;margin:10px 0;color:var(--accent-dark)}.study-content{min-width:0}.study-content h1{display:none}.study-content h2{font:400 35px/1.4 Georgia,'Songti SC',serif;letter-spacing:-.03em;margin:64px 0 22px;border-top:1px solid var(--line);padding-top:27px}.study-content h2:first-of-type{margin-top:0}.study-content h3{font-size:23px;font-weight:600;margin:34px 0 10px}.study-content p,.study-content li{font-size:14px;line-height:2;color:#575149}.study-content a{color:var(--accent-dark);text-decoration:underline;text-underline-offset:3px}.study-content table{border-collapse:collapse;width:100%;font-size:12px;line-height:1.75}.study-content td{padding:13px 12px;vertical-align:top;border:1px solid var(--line);min-width:95px}.study-content tr:first-child{background:#e5dfd4;font-weight:700}.study-content tr:nth-child(even){background:#f0ebe3}.study-content blockquote{border-left:3px solid var(--accent);padding:10px 17px;margin:18px 0;background:#eee9df;line-height:1.8;color:#554e45}.study-content code{background:#e8e3d9;padding:2px 5px;font:12px ui-monospace,monospace}.study-content ul,.study-content ol{padding-left:22px}.study-content strong{color:#302e29}.study-content{overflow-x:auto}.study-footer{padding:42px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.study-footer a{color:var(--accent-dark)}@media(max-width:740px){.study-hero{padding:60px 0 26px}.study-layout{grid-template-columns:1fr;gap:22px;padding:28px 0 70px}.study-aside{position:static;display:flex;flex-wrap:wrap;gap:8px}.study-aside strong{width:100%}.study-aside a{margin:0;border:1px solid var(--line);padding:4px 9px}.study-content h2{font-size:27px}.study-content table{font-size:11px}.study-content td{padding:9px 8px;min-width:85px}}
+</style></head><body><div class="notice">✳ 独立教育整理 · 官方事实与本站教学复刻明确区分 · 非 Anthropic 官方网站</div><header class="masthead"><div class="wrap nav-inner"><a class="wordmark" href="index.html"><span class="brand-mark">✳</span><span>THE AGENT <em>ATLAS</em></span></a><div class="nav-actions"><a href="index.html#teams" class="nav-gh">返回网站 ↗</a><a href="index.html#contact" class="nav-contact">联系作者 ↗</a></div></div></header><main><section class="study-hero"><div class="wrap"><div class="eyebrow">THE COMPLETE FIELD NOTES / 2024—2026</div><h1>从内部实验，<br>到 <em>Agent 规模化。</em></h1><p>一份可追溯的 Anthropic Claude Code 与 Agent 公开方法演进报告。关键论文、十团队用法、2026 扩展与可复制操作，从零开始整理。</p></div></section><div class="wrap study-layout"><aside class="study-aside"><strong>阅读目录 / INDEX</strong><a href="#chapter-1">发展时间线</a><a href="#chapter-2">十团队方法</a><a href="#chapter-3">2026 新实践</a><a href="#chapter-4">30 分钟练习</a><a href="#chapter-5">工程五步法</a><a href="index.html#sources">108 条官方资料 →</a></aside><article class="study-content"><h1>Anthropic Claude Code / Agent：2024–2026 完整实践进化史</h1>
+<blockquote>独立中文研究，由 AI 酋长 Andy 整理。内容基于截至 2026-11-10 的公开资料。官方记录和本站复刻绝不混淆。</blockquote>
+<h2>一、十三个关键节点</h2>
+<table><tbody>
+<tr><td>时间</td><td>官方公开方法</td><td>我们怎么学</td></tr>
+<tr><td>2024-12</td><td><a href="https://www.anthropic.com/research/building-effective-agents" target="_blank" rel="noopener noreferrer">Building effective agents ↗</a>：优先简单架构，区分工作流和 Agent</td><td>普通脚本能完成的，不必堆多 Agent</td></tr>
+<tr><td>2025-04</td><td><a href="https://www.anthropic.com/research/claude-code-best-practices" target="_blank" rel="noopener noreferrer">Claude Code 最佳实践 ↗</a>：项目约定、上下文与测试</td><td>探索 → 计划 → 修改 → 验证</td></tr>
+<tr><td>2025-06</td><td><a href="https://www.anthropic.com/research/multi-agent-research-system" target="_blank" rel="noopener noreferrer">Multi-agent research ↗</a>：研究任务拆分和并行证据收集</td><td>每个子任务有来源与独立标准</td></tr>
+<tr><td>2025-07</td><td><a href="https://www.anthropic.com/news/how-anthropic-teams-use-claude-code" target="_blank" rel="noopener noreferrer">Anthropic 内部十部门 ↗</a>：营销、设计、法务等均可使用</td><td>每个部门先挑一个高频真实任务</td></tr>
+<tr><td>2025-09</td><td><a href="https://www.anthropic.com/research/effective-context-engineering-for-ai-agents" target="_blank" rel="noopener noreferrer">Agent context engineering ↗</a>：上下文预算与信息选择</td><td>少堆规则，多按需加载</td></tr>
+<tr><td>2025-10</td><td><a href="https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills" target="_blank" rel="noopener noreferrer">Agent Skills ↗</a>：组织知识技能化</td><td>用说明 + 脚本 + 资源固化方法</td></tr>
+<tr><td>2025-11</td><td><a href="https://www.anthropic.com/research/effective-harnesses-for-long-running-agents" target="_blank" rel="noopener noreferrer">Long-running harness ↗</a>：初始化、交接、检查点</td><td>不依赖无限增长的聊天历史</td></tr>
+<tr><td>2026-01</td><td><a href="https://www.anthropic.com/research/demystifying-evals-for-ai-agents" target="_blank" rel="noopener noreferrer">Agent evals ↗</a>：可复现的任务评分</td><td>先写测试，再说“完成”</td></tr>
+<tr><td>2026-02</td><td><a href="https://www.anthropic.com/research/building-c-compiler" target="_blank" rel="noopener noreferrer">C 编译器多代理实验 ↗</a>：高并行与巨额验证成本</td><td>看懂边界，勿盲目照搬规模</td></tr>
+<tr><td>2026-03</td><td><a href="https://www.anthropic.com/research/harness-design-long-running-apps" target="_blank" rel="noopener noreferrer">Harness design ↗</a>：规划、生成、评估</td><td>将验收设计进任务</td></tr>
+<tr><td>2026-04</td><td><a href="https://www.anthropic.com/research/managed-agents" target="_blank" rel="noopener noreferrer">Managed Agents ↗</a>：稳定接口和执行隔离</td><td>把逻辑与运行环境分开</td></tr>
+<tr><td>2026-10</td><td><a href="https://www.anthropic.com/research/redesigning-source-control" target="_blank" rel="noopener noreferrer">Scion 源码管理 ↗</a>：agent-scale 开发基础设施</td><td>工程约束、测试与审批仍不可省</td></tr>
+<tr><td>2026-11</td><td><a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" rel="noopener noreferrer">Agent memory ↗</a>：记忆、检索、校验与整理</td><td>记录经过证实且值得复用的信息</td></tr>
+</tbody></table>
+<h2>二、官方十部门的最小可复制版本</h2>
+<p>这里的“官方”是 2025 年公开访谈；“复刻”属于本站原创，并非 Anthropic 内部 Prompt。</p>
+<table><tbody>
+<tr><td>部门</td><td>官方公开工作</td><td>本站复刻的 3 步</td></tr>
+<tr><td>数据基础设施</td><td>截图和日志排障、向非技术团队交付查询</td><td>脱敏日志 → 根因与只读检查 → 人工审批</td></tr>
+<tr><td>Claude Code 产品研发</td><td>快速原型、单测、理解代码、协助 PR</td><td>探索代码 → 最小修复 → 运行回归</td></tr>
+<tr><td>安全工程</td><td>Terraform 变更审查、Runbook、测试</td><td>检查权限差异 → 风险清单 → 人工复核</td></tr>
+<tr><td>推理工程</td><td>理解复杂项目、边界测试、跨语言迁移</td><td>列测试向量 → 翻译实现 → 等价核对</td></tr>
+<tr><td>数据科学与可视化</td><td>非前端专家制作 React 交互看板</td><td>虚构表格 → 图表 → 独立汇总验算</td></tr>
+<tr><td>API Knowledge / 产品工程</td><td>大型仓库检索、定位文件与依赖链</td><td>只读找路径 → 复现问题 → 最小改动</td></tr>
+<tr><td>增长营销</td><td>CSV 广告分析、双子 Agent、批量创意</td><td>CTR/CPC → 标题与描述分工 → 人工审稿</td></tr>
+<tr><td>产品设计</td><td>截图到交互原型、状态与边界设计</td><td>5 状态定义 → 原型 → 可用性检查</td></tr>
+<tr><td>强化学习工程</td><td>小型实现、检查点、失败回滚</td><td>最小任务 → 测试 → 可逆提交</td></tr>
+<tr><td>法务</td><td>请求路由、会议工具、非程序员建工具</td><td>虚构请求 → 路由草稿 → 专业人员确认</td></tr>
+</tbody></table>
+<p>原始资料：<a href="https://www.anthropic.com/news/how-anthropic-teams-use-claude-code" target="_blank" rel="noopener noreferrer">Anthropic 官方十团队长文 ↗</a>；<a href="https://claude.com/resources/articles/how-anthropic-teams-use-claude-code" target="_blank" rel="noopener noreferrer">原文报道 ↗</a>。</p>
+<h2>三、2026 扩展：更多真实内部实践</h2>
+<h3>Cowork 四个部门</h3>
+<p>Anthropic 公开的 <a href="https://claude.com/resources/guides/deploying-claude-across-your-organization/how-anthropic-teams-use-cowork" target="_blank" rel="noopener noreferrer">Cowork 内部团队案例 ↗</a> 另覆盖财务、法务、销售、产品。此资料<strong>不等于 2025 Claude Code 的十部门报告</strong>。</p>
+<ul>
+<li>财务：MCP 连接授权数据源，再用技能封装重复查询、偏差分析和仪表盘生成；适合复刻为虚构数据练习。</li>
+<li>法务：借助 Skills 与受控文档处理营销审查与合同初稿；应由专业人员复核。</li>
+<li>销售：组织关系上下文与业务资料；外呼、发信和 CRM 修改前保留授权。</li>
+<li>产品：把内部文档、分析和跨职能协作连接起来；需求变更必须定义完成标准。</li>
+</ul>
+<p>补充：<a href="https://claude.com/resources/articles/how-anthropic-uses-claude-legal" target="_blank" rel="noopener noreferrer">Anthropic 法务团队的公开访谈 ↗</a>。</p>
+<h3>DevRel 真实配置仓库</h3>
+<p><a href="https://github.com/anthropics/claude-code-playground" target="_blank" rel="noopener noreferrer">anthropics/claude-code-playground ↗</a> 发布了 DevRel 员工真实使用的配置和演示：</p>
+<ul>
+<li><code>claude-code/claude-md/</code>：真实项目约定与使用说明。</li>
+<li><code>claude-code/hooks/</code>：工具 Hook 示例。</li>
+<li><code>claude-code/settings/</code>：不同环境的设置。</li>
+<li><code>claude-code/workflows/</code>：实际个人流程与设计取舍。</li>
+<li><code>skills/</code>：可重用的 Agent Skills。</li>
+<li><code>demos/</code> 与 <code>launch-demos/</code>：演示构建过程、实验限制。</li>
+</ul>
+<p>请注意该仓库自己的声明：它是 DevRel 实验场，不是官方最佳实践标准，更不保证每个示例长期有效。</p>
+<p>进一步参阅：<a href="https://github.com/anthropics/skills" target="_blank" rel="noopener noreferrer">Agent Skills ↗</a>、<a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener noreferrer">Claude Code ↗</a>、<a href="https://github.com/anthropics/claude-cookbooks" target="_blank" rel="noopener noreferrer">Cookbook ↗</a>、<a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener noreferrer">官方 Plugins ↗</a>。</p>
+<h2>四、把方法真正用到业务：一个 30 分钟练习</h2>
+<p><strong>0–5 分钟：写清任务。</strong> 建立 TASK.md，写目标、样本输入、输出和三条验收标准。</p>
+<p><strong>5–10 分钟：先让 AI 探索。</strong> 复制：</p>
+<blockquote>请只读检查项目文件和 TASK.md，列已确认事实、依赖、未知、风险和能运行的测试。先不要修改任何文件。</blockquote>
+<p><strong>10–20 分钟：最小交付。</strong></p>
+<blockquote>只实现约定范围中的最小方案。不要接触真实客户数据或账户。完成后给出产物路径和真实检查结果。</blockquote>
+<p><strong>20–30 分钟：验证与记录。</strong> 检查文件、运行测试、记录成本、失败原因与回滚点。只有重复出现且稳定的任务才值得写成 Skill。</p>
+<p>推荐复刻 <a href="https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook/blob/main/docs/../examples/ads/README.md" target="_blank" rel="noopener noreferrer">广告 CSV 演练 ↗</a>。样本全为虚构数据，既不连接广告平台，也不承诺收益。</p>
+<h2>五、工程五步法（作者独立建议）</h2>
+<ol>
+<li>质疑需求：这件事带来什么可衡量增量？</li>
+<li>删除：有哪几步完全可以不做？</li>
+<li>简化：把任务缩到可验证的单元，脚本能做就先用脚本。</li>
+<li>加快迭代：小样本验证，保留反例，复查事实。</li>
+<li>自动化：在有基线和验证后再增加 Skills、Hooks、Subagents。</li>
+</ol>
+<p>这不是 Anthropic 官方规定的五步法，而是对其公开方法做的业务化整理。</p>
+<h2>六、内容边界与合作</h2>
+<ul>
+<li>本项目已整理 <a href="https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook/blob/main/docs/SOURCE-MATRIX.md" target="_blank" rel="noopener noreferrer">108 条公开链接及 17 个主题 ↗</a>，涵盖官方文章、文档、开源仓库。<strong>不是声称知道 Anthropic 的全部内部活动。</strong></li>
+<li>官方文档会持续修订；版本更新以 <a href="https://code.claude.com/docs/llms.txt" target="_blank" rel="noopener noreferrer">Claude Code 官方索引 ↗</a> 为准。</li>
+<li>免费教程不要求购买服务。整理者：AI 酋长 Andy；<a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网 ↗</a>、<a href="https://www.a6no1.cn/" target="_blank" rel="noopener noreferrer">星觉科技 ↗</a>；业务微信：<strong>AIPMAndy</strong>（请备注 Claude Code）。</li>
+</ul></article></div><div class="study-footer"><div class="wrap">AI 酋长 Andy 整理 · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">作者官网 ↗</a> · <a href="https://www.a6no1.cn/" target="_blank" rel="noopener noreferrer">星觉科技 ↗</a> · 微信：<strong>AIPMAndy</strong> · <a href="index.html">回到首页 ↑</a></div></div></main><script>document.querySelectorAll(".study-content h2").forEach(function(e,i){e.id="chapter-"+(i+1);});</script></body></html>
