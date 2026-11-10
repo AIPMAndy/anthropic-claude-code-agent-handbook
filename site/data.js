@@ -1056,7 +1056,7 @@ window.ANTHROPIC_LIBRARY = [
     "topic": "Claude Code",
     "title": "The making of Claude Code",
     "description": "Claude Code 从内部 CLI 成长为产品的公开采访与过程。",
-    "url": "https://www.anthropic.com/news",
+    "url": "https://www.anthropic.com/features/making-of-claude-code",
     "date": "2026-02-23",
     "weight": 3
   },
@@ -1066,7 +1066,7 @@ window.ANTHROPIC_LIBRARY = [
     "topic": "Agent 设计",
     "title": "Project Deal Agent 实验",
     "description": "让 Claude 参与员工间的商品交易实验，关注边界与监督。",
-    "url": "https://www.anthropic.com/news",
+    "url": "https://www.anthropic.com/features/project-deal",
     "date": "2026-04-21",
     "weight": 3
   },
