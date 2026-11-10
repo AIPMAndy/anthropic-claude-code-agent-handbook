@@ -1,3 +1,13 @@
+> **🌐 在线中文研究站：** [Claude Code × Agent 实践图鉴](https://aipmandy.github.io/anthropic-claude-code-agent-handbook/) · [深度研究报告](https://aipmandy.github.io/anthropic-claude-code-agent-handbook/study.html) · [原始网站文件](site/index.html)
+>
+> **📚 目前收录：108 条官方资料入口 / 17 个主题 / 10 个内部部门案例 / 2024–2026 实践进化史。** [全部原始证据](docs/SOURCE-MATRIX.md) · [独立研究长文](docs/2024-2026-PRACTICES.md)
+>
+> **⚠️ 首次发布 GitHub Pages 需仓库所有者到 Settings → Pages → Source 选择 GitHub Actions。** 当前站点文件和部署工作流均已提交；只有实际网页可访问后，才能将其称为“网站已上线”。[发布说明](PUBLISH.md)
+>
+> **作者与可选合作：** AI 酋长 Andy · [个人官网](https://metaver.vip/) · [星觉科技官网](https://www.a6no1.cn/) · **业务微信：`AIPMAndy`**（备注「Claude Code」）。免费学习无需添加微信。
+>
+> ---
+>
 <div align="center">
 
 # Anthropic Claude Code × Agent 实战保姆级攻略
@@ -66,6 +76,14 @@ python3 -m unittest discover -s tests -v
 ```
 
 所有广告数据均为**人工构造的教学数据**，不是 Anthropic 或客户的真实账户。输出只是待改进广告的指标标记，不会自动调用模型、投放广告或承诺收益。详见 [练习步骤](examples/ads/README.md)。
+
+## 网站版与资料覆盖
+
+- **网站首页：** [site/index.html](site/index.html)，Anthropic 风格的原创响应式 UI，内含 108 条官方资料的全文本检索和 10 团队案例。
+- **可读研究报告：** [site/study.html](site/study.html)，按时间线呈现公开研究的核心方法，并链接原文。
+- **源码清单：** [docs/SOURCE-MATRIX.md](docs/SOURCE-MATRIX.md)，108 条资料按 17 个主题编目；注释和原始链接均可查。
+- **部署与质量：** [.github/workflows/pages.yml](.github/workflows/pages.yml) 自动校验并部署；[scripts/check_site.py](scripts/check_site.py) 检查内容与联系方式。部署前需先设置 Pages。
+- **作者商业入口：** 网站首屏下方、联系页和页脚均有明确广告标注、微信号 AIPMAndy、[个人官网](https://metaver.vip/)和[星觉科技](https://www.a6no1.cn/)。
 
 ## 项目目录
 
