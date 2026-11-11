@@ -4,19 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f6f3ec">
-  <meta name="description" content="免费、独立的 Anthropic Claude Code × Agent 中文实战手册：10 个内部团队案例、108 条官方资源、Skills、MCP、多 Agent 和可复制实践。AI 酋长 Andy 整理。">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Claude Code × Agent 完整实践图鉴｜Andy 开源手册">
-  <meta property="og:description" content="108 条原始出处，10 个团队，完整学习路径。公开资料的中文实战整理。">
-  <meta property="og:image" content="https://aipmandy.github.io/anthropic-claude-code-agent-handbook/og.svg">
+  <title>Claude Code 中文教程：Agent 实践图鉴｜AI酋长Andy</title>
+  <meta name="description" content="Claude Code 中文教程与 Agent 开源实战手册：6 章教程、10 个团队案例、6 类 Agent 架构、108 条官方资料。免费开源，非 Anthropic 官方，与 Anthropic 无关。作者 AI酋长Andy。">
   <link rel="canonical" href="https://aipmandy.github.io/anthropic-claude-code-agent-handbook/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="Claude Code 中文教程：Agent 实践图鉴｜AI酋长Andy">
+  <meta property="og:description" content="Claude Code 中文教程与 Agent 开源实战手册：6 章教程、10 个团队案例、6 类 Agent 架构、108 条官方资料。免费开源，非 Anthropic 官方，与 Anthropic 无关。作者 AI酋长Andy。">
+  <meta property="og:url" content="https://aipmandy.github.io/anthropic-claude-code-agent-handbook/">
+  <meta property="og:image" content="https://aipmandy.github.io/anthropic-claude-code-agent-handbook/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@AIPMAndy">
+  <meta name="twitter:title" content="Claude Code 中文教程：Agent 实践图鉴｜AI酋长Andy">
+  <meta name="twitter:description" content="Claude Code 中文教程与 Agent 开源实战手册：6 章教程、10 个团队案例、6 类 Agent 架构、108 条官方资料。免费开源，非 Anthropic 官方，与 Anthropic 无关。作者 AI酋长Andy。">
+  <meta name="twitter:image" content="https://aipmandy.github.io/anthropic-claude-code-agent-handbook/assets/social-preview.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <title>Claude Code × Agent 实践图鉴 · AI 酋长 Andy</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://github.com/AIPMAndy#person","name":"AI酋长Andy","alternateName":["AI Chief Andy","Andy Liu","AIPMAndy"],"url":"https://metaver.vip/","sameAs":["https://x.com/AIPMAndy","https://github.com/AIPMAndy","https://metaver.vip/","https://aipmandy.github.io/"],"jobTitle":"连续创业者（AI + 产品方法论），前腾讯/百度 AI 产品专家，大模型独角兽前 VP","description":"AI酋长Andy（Andy Liu，GitHub/X @AIPMAndy）：前腾讯/百度 AI 产品专家，大模型独角兽前 VP，现专注 AI + 产品方法论创业。"},{"@type":"WebSite","alternateName":"Claude Code 中文教程","@id":"https://aipmandy.github.io/anthropic-claude-code-agent-handbook/#website","url":"https://aipmandy.github.io/anthropic-claude-code-agent-handbook/","name":"Claude Code 中文教程：Agent 实践图鉴","description":"Claude Code 中文教程与 Agent 开源实战手册：6 章教程、10 个团队案例、6 类 Agent 架构、108 条官方资料。免费开源，非 Anthropic 官方，与 Anthropic 无关。作者 AI酋长Andy。","inLanguage":"zh-CN","author":{"@id":"https://github.com/AIPMAndy#person"},"publisher":{"@id":"https://github.com/AIPMAndy#person"}}]}</script>
 </head>
 <body>
 <a href="#main" class="skip-link">跳到正文</a>
-<div class="notice"><span class="little-star">✳</span> 独立开源研究项目 · 根据 Anthropic 官方公开资料整理 · <strong>非 Anthropic 官方网站</strong><a href="#sources">查看证据来源 <span aria-hidden="true">↗</span></a></div>
+<div class="notice"><span class="little-star">✳</span> 独立开源研究项目 · 根据 Anthropic 官方公开资料整理 · <strong>非 Anthropic 官方网站，与 Anthropic 无关</strong><a href="#sources">查看证据来源 <span aria-hidden="true">↗</span></a></div>
 <header class="masthead">
   <div class="wrap nav-inner">
     <a class="wordmark" href="#home" aria-label="返回首页"><span class="brand-mark" aria-hidden="true">✳</span><span>THE AGENT <em>ATLAS</em></span></a>
@@ -33,10 +43,10 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <div class="eyebrow"><span class="dot"></span> OPEN SOURCE FIELD GUIDE <span class="muted">/ 2026 EDITION</span></div>
-      <h1>他们如何让<br><em>Claude</em> <span class="hero-serif">真正<br>开始做事。</span></h1>
+      <h1>Claude Code 中文教程<br><em>让 Agent 真正开始做事。</em></h1>
       <p class="lead">从 Anthropic 员工真实做过的项目，到 Agent 架构、工具和代码配置。<strong>不是重复新闻，而是把公开方法拆到你能照着做。</strong></p>
       <div class="hero-buttons"><a href="#paths" class="btn btn-primary">开始实战 <span>↗</span></a><a href="#sources" class="btn btn-outline">浏览全部资料 <span>→</span></a></div>
-      <div class="hero-foot"><span>2026.11.10 核查</span><span class="sep">·</span><span>完全免费 / 来源可追溯</span><span class="sep">·</span><a href="study.html" style="text-decoration:underline;text-underline-offset:4px;color:#a94d38">阅读深度报告 ↗</a></div>
+      <div class="hero-foot"><span>2026.11.10 核查</span><span class="sep">·</span><span>完全免费 / 来源可追溯</span><span class="sep">·</span><span>微信 AIPMAndy（备注「Claude Code」）</span><span class="sep">·</span><a href="https://metaver.vip/services" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;text-underline-offset:4px;color:#a94d38">查看服务 ↗</a><span class="sep">·</span><a href="study.html" style="text-decoration:underline;text-underline-offset:4px;color:#a94d38">阅读深度报告 ↗</a></div>
     </div>
     <div class="hero-art" aria-label="Agent 工作流概念图">
       <div class="art-top"><span class="art-kicker">FROM PROMPT TO PROCESS</span><span class="art-asterisk" aria-hidden="true">✳</span></div>

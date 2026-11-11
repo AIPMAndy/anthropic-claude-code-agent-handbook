@@ -1,3 +1,6 @@
+# Search engines typically read robots.txt at the host root
+# (https://aipmandy.github.io/robots.txt). This copy is kept with the project site.
 User-agent: *
 Allow: /
+
 Sitemap: https://aipmandy.github.io/anthropic-claude-code-agent-handbook/sitemap.xml
