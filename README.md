@@ -19,6 +19,17 @@
 
 </div>
 
+<!-- andy-pdf-edition:start -->
+## 精美 PDF 电子书
+
+[**免费下载《Claude Code 与 Agent 实战手册》**](pdf/anthropic-claude-code-agent-handbook-guide.pdf) · [直接下载 PDF](https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook/raw/refs/heads/main/pdf/anthropic-claude-code-agent-handbook-guide.pdf)
+
+**81 页 · A5 手机阅读版 · 可点击目录 · 0.79 MB**  
+整理日期：2026-11-13。包含完整实操正文、案例、模板与原始来源；平台规则与价格沿用原资料的核查日期。
+
+**作者与服务（广告）**：AI 酋长 Andy · 个人微信 **AIPMAndy** · [个人官网](https://metaver.vip/) · [公司官网](https://www.a6no1.cn/)。免费教程可直接使用，咨询与合作自愿选择。
+<!-- andy-pdf-edition:end -->
+
 > **TL;DR｜一句话**：这是 AI酋长Andy 写的非官方 Claude Code 中文教程与 Agent 实战手册。它把公开资料整理成 6 章教程、10 个团队案例、6 类 Agent 架构和 108 条官方资料，并配上可复制的提示词、子 Agent 与 Skill 模板。不是 Anthropic 官方项目，也不包含其内部未公开 Prompt。
 >
 > 作者：AI酋长Andy（[GitHub @AIPMAndy](https://github.com/AIPMAndy) · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)）

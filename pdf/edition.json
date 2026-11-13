@@ -1,0 +1,35 @@
+{
+  "repo": "anthropic-claude-code-agent-handbook",
+  "title": "Claude Code 与 Agent 实战手册",
+  "date": "2026-11-13",
+  "source_commit": "c3cfe8ab680ad9f1b3e9b325ce6b5e631d96f1c0",
+  "pages": 81,
+  "sections": 13,
+  "source_files": [
+    "docs/00-quickstart.md",
+    "docs/01-ten-teams.md",
+    "docs/02-agent-patterns.md",
+    "docs/03-code-playbook.md",
+    "docs/04-business-cases.md",
+    "docs/05-evals-and-safety.md",
+    "docs/2024-2026-PRACTICES.md",
+    "examples/ads/README.md",
+    "prompts/discover.md",
+    "prompts/marketing-agents.md",
+    "prompts/plan-build-verify.md",
+    "docs/SOURCE-MATRIX.md",
+    "sources/official-sources.md"
+  ],
+  "website": "https://aipmandy.github.io/anthropic-claude-code-agent-handbook/",
+  "bytes": 831957,
+  "sha256": "47b0a1c6d4099d3e744d7f00a2d62e60b9721a2b4741f5502e3f206911269179",
+  "pdf_path": "pdf/anthropic-claude-code-agent-handbook-guide.pdf",
+  "contacts": {
+    "personal_website": "https://metaver.vip/",
+    "company_website": "https://www.a6no1.cn/",
+    "wechat": "AIPMAndy",
+    "public_account": "AI 酋长 Andy"
+  },
+  "edition": "A5 · 黑白金实操系列 · PDF 2026.11",
+  "notes": "PDF编排日期不代表所有外部政策与价格的重新核验日期。源文件许可与案例标注继续适用。"
+}
