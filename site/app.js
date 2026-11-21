@@ -167,6 +167,25 @@
   document.getElementById("library-type").addEventListener("change",function(e){kind=e.target.value;shown=pageSize;renderSources();});
   document.getElementById("topic-bar").addEventListener("click",function(ev){var btn=ev.target.closest("[data-topic]");if(!btn)return;topic=btn.dataset.topic;shown=pageSize;renderSources();});
   document.getElementById("show-more").addEventListener("click",function(){shown+=pageSize;renderSources();});
+  document.getElementById("reset-sources").addEventListener("click",function(){
+    search="";topic="全部";kind="all";shown=pageSize;
+    document.getElementById("library-search").value="";
+    document.getElementById("library-type").value="all";
+    renderSources();
+    document.getElementById("library-search").focus();
+  });
+  document.getElementById("export-sources").addEventListener("click",function(){
+    try{
+      if(!window.AgentSourceAudit)throw new Error("Exporter missing");
+      var file=new Blob([window.AgentSourceAudit.exportText(matched())],{type:"text/plain;charset=utf-8"});
+      var href=URL.createObjectURL(file);
+      var link=document.createElement("a");
+      link.href=href;link.download="agent-atlas-source-review.txt";
+      document.body.appendChild(link);link.click();link.remove();
+      setTimeout(function(){URL.revokeObjectURL(href);},1200);
+      notify("已导出当前筛选结果，请逐条人工核实来源");
+    }catch(_){notify("导出失败，请重试或使用官网原始链接");}
+  });
   document.addEventListener("keydown",function(ev){
     if(ev.key==="/"&&document.activeElement.tagName!=="INPUT"&&document.activeElement.tagName!=="TEXTAREA"){
       ev.preventDefault();document.getElementById("library-search").focus();location.hash="sources";

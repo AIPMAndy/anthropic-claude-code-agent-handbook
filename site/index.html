@@ -45,7 +45,7 @@
       <div class="eyebrow"><span class="dot"></span> OPEN SOURCE FIELD GUIDE <span class="muted">/ 2026 EDITION</span></div>
       <h1>Claude Code 中文教程<br><em>让 Agent 真正开始做事。</em></h1>
       <p class="lead">从 Anthropic 员工真实做过的项目，到 Agent 架构、工具和代码配置。<strong>不是重复新闻，而是把公开方法拆到你能照着做。</strong></p>
-      <div class="hero-buttons"><a href="#paths" class="btn btn-primary">开始实战 <span>↗</span></a><a href="#sources" class="btn btn-outline">浏览全部资料 <span>→</span></a></div>
+      <div class="hero-buttons"><a href="#paths" class="btn btn-primary">开始实战 <span>↗</span></a><a href="downloads/anthropic-claude-code-agent-handbook-guide.pdf" class="btn btn-outline">免费下载 81 页 PDF <span>↓</span></a></div>
       <div class="hero-foot"><span>2026.11.10 核查</span><span class="sep">·</span><span>完全免费 / 来源可追溯</span><span class="sep">·</span><span>微信 AIPMAndy（备注「Claude Code」）</span><span class="sep">·</span><a href="https://metaver.vip/services" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;text-underline-offset:4px;color:#a94d38">查看服务 ↗</a><span class="sep">·</span><a href="study.html" style="text-decoration:underline;text-underline-offset:4px;color:#a94d38">阅读深度报告 ↗</a></div>
     </div>
     <div class="hero-art" aria-label="Agent 工作流概念图">
@@ -91,8 +91,8 @@
   <div class="library-count"><span id="visible-count">正在加载…</span><span>按相关性及公开时间展示</span></div>
   <div id="source-list" class="source-grid" aria-live="polite"></div>
   <div id="empty-state" class="empty-state" hidden>没有找到匹配资料。试试缩短关键词，或者清除筛选。</div>
-  <div class="more-line"><button type="button" id="show-more" class="btn btn-outline">加载更多资料 <span>↓</span></button></div>
-  <p class="library-fineprint">“资料条数”是本站已编目的独立入口数量，不代表覆盖了 Anthropic 的全部公开发布。官方文档持续更新，细节始终以原始页面为准；如发现遗漏，欢迎通过 GitHub 提交 Issue。</p>
+  <div class="source-actions"><button type="button" id="reset-sources" class="btn btn-outline">清空筛选</button><button type="button" id="export-sources" class="btn btn-outline">导出当前筛选 TXT ↓</button></div><div class="more-line"><button type="button" id="show-more" class="btn btn-outline">加载更多资料 <span>↓</span></button></div>
+  <p class="library-fineprint">导出的是原始资料的历史整理记录，不是今天的链接有效性认证；请在清单中逐条填写实际复核日期和结论。“资料条数”是本站已编目的独立入口数量，不代表覆盖了 Anthropic 的全部公开发布。官方文档持续更新，细节始终以原始页面为准；如发现遗漏，欢迎通过 GitHub 提交 Issue。</p>
 </div></section>
 <section class="practice-section" id="practice"><div class="wrap practice-grid">
   <div><div class="eyebrow">05 / WORK IN PUBLIC</div><h2>今天就做<br><em>第一个小项目。</em></h2><p>先运行确定性的表格分析，之后再用 Claude Code 拆成专业 Agent。不要一上来接真实客户、投放账号或付款权限。</p><div class="practice-links"><a class="text-link" href="https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook/tree/main/examples/ads" target="_blank" rel="noopener noreferrer">广告分析教学案例 ↗</a><a class="text-link" href="https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook/tree/main/.claude" target="_blank" rel="noopener noreferrer">可复制 Agent / Skill 文件 ↗</a></div></div>
@@ -102,6 +102,6 @@
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-top"><div class="wordmark"><span class="brand-mark">✳</span><span>THE AGENT <em>ATLAS</em></span></div><div class="footer-links"><a href="#home">回到顶部 ↑</a><a href="https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook" target="_blank" rel="noopener noreferrer">开源仓库 ↗</a><a href="study.html">深度研究报告 ↗</a><a href="https://code.claude.com/docs/llms.txt" target="_blank" rel="noopener noreferrer">完整官方 Docs 索引 ↗</a></div></div><div class="footer-bottom"><span>© 2026 AI 酋长 Andy. 独立教育与研究性整理。</span><span>不使用 Anthropic 官方标识，不复制第三方文章全文。</span><span>截至 2026-11-10 · 自愿维护</span></div></div></footer>
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-<script src="data.js"></script><script src="app.js"></script>
+<script src="data.js"></script><script src="source-audit.js"></script><script src="app.js"></script>
 </body>
 </html>
