@@ -1,0 +1,49 @@
+# Claude Code 中文教程：Agent 实战手册
+
+> Claude Code 中文教程：Anthropic Agent 与 Claude Code 开源实战手册。含 6 章教程、10 个团队案例、6 类 Agent 架构、108 条官方资料与可复制 Skill/子 Agent 模板；免费开源，非 Anthropic 官方，作者 AI酋长Andy
+
+- 作者：AI酋长Andy（AIPMAndy），官网 https://metaver.vip/
+- 开源仓库：https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook
+- 在线地址：https://aipmandy.github.io/anthropic-claude-code-agent-handbook/
+- 许可：CC BY 4.0
+- 语言：中文（zh-CN）
+- 最近更新：2026-11-21
+
+## 这是什么
+
+从 Anthropic 10 个团队的公开案例，到可以照着做的 Agent 方法。
+6 章教程 · 10 个团队案例 · 6 类 Agent 架构 · 108 条官方资料 · 可复制的子 Agent / Skill 模板
+
+## 主要页面
+
+- [Claude Code 中文教程：Agent 实践图鉴｜AI酋长Andy](https://aipmandy.github.io/anthropic-claude-code-agent-handbook/)
+- [深度报告：Anthropic 2024–2026 Claude Code 与 Agent 实践｜Agent Atlas](https://aipmandy.github.io/anthropic-claude-code-agent-handbook/study.html)
+
+## 内容目录
+
+- 精美 PDF 电子书
+- 从哪开始读
+- 这份手册里有什么
+- 完整目录
+- 10 个内部团队速览
+- 最短实操路线
+- 为什么做这个项目
+- 阅读规则与版权
+- 作者
+
+## 关键事实
+
+- 名称：Claude Code 中文教程：Agent 实战手册
+- 类型：中文开源项目 / 学习手册
+- 内容规模：6 章
+- 许可：CC BY 4.0
+- 语言：中文
+- 最近更新：2026-11-21
+- 仓库：https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook
+
+## 相关链接
+
+- [作者官网](https://metaver.vip/)
+- [GitHub 主页](https://github.com/AIPMAndy/AIPMAndy)
+- [开源总目录](https://aipmandy.github.io/)
+- [机器可读摘要](https://aipmandy.github.io/anthropic-claude-code-agent-handbook/llms.txt)
